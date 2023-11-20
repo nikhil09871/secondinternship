@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <form id="registrationForm">
+            <h2>Registration Form</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="randomname@gmail.com" required>
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="validateForm()">Submit</button>
+        </form>
+
+        <div id="confirmation" class="confirmation" style="display: none;">
+            <h2>Registration Successful!</h2>
+            <p>Your registration information has been submitted successfully.</p>
+        </div>
+    </div>
+
+    <script src="javas.js"></script>
+</body>
+</html>
